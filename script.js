@@ -17,7 +17,7 @@
     entries.forEach(entry=>{
       if(entry.isIntersecting) entry.target.classList.add('in-view');
     });
-  },{threshold:.14});
+  },{threshold:0.14});
   observed.forEach(el=>io.observe(el));
 
   function rand(min,max){return Math.round(Math.random()*(max-min)+min)}
